@@ -352,7 +352,7 @@ pub mod arbitrary_precision_option {
         D: serde::de::Deserializer<'de>,
     {
         Option::<serde_json::Number>::deserialize(deserializer)?
-                                     .map(|num| num.as_str().parse().map_err(serde::de::Error::custom))
+                                     .map(|num| num.to_string().parse().map_err(serde::de::Error::custom))
                                      .transpose()
     }
 
