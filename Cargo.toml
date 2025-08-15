@@ -27,7 +27,7 @@ num-integer = { version = "0.1", default-features = false }
 num-traits = { version = "0.2", default-features = false }
 serde = { version = "1.0", optional = true, default-features = false }
 # Allow direct parsing of JSON floats, for full arbitrary precision
-serde_json = { version = "1.0", optional = true, default-features = false, features = ["alloc", "arbitrary_precision"]}
+serde_json = { version = "1.0", optional = true, default-features = false, features = ["alloc"]}
 
 [dev-dependencies]
 paste = "1"
